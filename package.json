@@ -1,0 +1,11 @@
+{
+  "name": "yangu-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "node backend/server.js"
+  }
+}
+

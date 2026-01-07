@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3a36d5b.css",
+    "main.js": "/static/js/main.945fdae9.js",
+    "static/media/shoe2.jpg": "/static/media/shoe2.384cedde1298c136ac9c.jpg",
+    "static/media/shoe4.jpg": "/static/media/shoe4.1e71edb9235e46e939f8.jpg",
+    "static/media/shoe6.jpg": "/static/media/shoe6.2c508aebdb0bbac5d694.jpg",
+    "static/media/femaleshoe.jpg": "/static/media/femaleshoe.60b6a209f60f7d207cb4.jpg",
+    "static/media/shoe3.jpg": "/static/media/shoe3.2a67fb865d09826e34cb.jpg",
+    "static/media/shoe5.jpg": "/static/media/shoe5.e36809b343479fc14425.jpg",
+    "static/media/maleBest.jpg": "/static/media/maleBest.041f80ff325d958be9fc.jpg",
+    "static/media/women_Shoes.jpg": "/static/media/women_Shoes.d22354e0ccc088acbe45.jpg",
+    "static/media/shoe7.jpg": "/static/media/shoe7.1df40695790aee5d1b3d.jpg",
+    "static/media/shoe8.jpg": "/static/media/shoe8.d875b6f41b66bd2284f0.jpg",
+    "static/media/banner1.jpeg": "/static/media/banner1.a9f1e15bca88de31fffb.jpeg",
+    "static/media/hoodie.jpg": "/static/media/hoodie.f8b4958201f11ac2e83b.jpg",
+    "static/media/female1.jpg": "/static/media/female1.5d2904ea40b9dce52804.jpg",
+    "static/media/airforce.jpg": "/static/media/airforce.fc950144fa1103c8c89d.jpg",
+    "static/media/yanguShopLogo.png": "/static/media/yanguShopLogo.47fcc393a43e02f0d2e8.png",
+    "static/media/hoodie2.jpg": "/static/media/hoodie2.5ada256a7d6b0b6d632b.jpg",
+    "static/media/iphones.jpg": "/static/media/iphones.e46639d58eac211aedce.jpg",
+    "static/media/shoebaby2.jpg": "/static/media/shoebaby2.f0e1a3349e4fccbd5613.jpg",
+    "static/media/menShoe1.jpg": "/static/media/menShoe1.e87e956e717a9c004b82.jpg",
+    "static/media/mackbookAir.jpg": "/static/media/mackbookAir.8c15539c3afe1587d69c.jpg",
+    "static/media/shirtMen.jpg": "/static/media/shirtMen.d8df222884fe82396bc5.jpg",
+    "index.html": "/index.html",
+    "main.b3a36d5b.css.map": "/static/css/main.b3a36d5b.css.map",
+    "main.945fdae9.js.map": "/static/js/main.945fdae9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3a36d5b.css",
+    "static/js/main.945fdae9.js"
+  ]
+}

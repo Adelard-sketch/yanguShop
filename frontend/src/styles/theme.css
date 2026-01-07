@@ -1,0 +1,56 @@
+/* Theme variables for YanguShop */
+:root {
+  --green: #00bf63;
+  --orange: #ef8121;
+  --purple: #710056;
+  --blue: #1c486f;
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Creative palette */
+  --accent-1: #ff6b35;
+  --accent-2: #7c3aed;
+  --accent-3: #06b6d4;
+  --glass: rgba(255,255,255,0.6);
+  --card-glow: rgba(124,58,237,0.12);
+
+  /* Semantic colors */
+  --bg: var(--white);
+  --text: #0f1724;
+  --muted: #6b7280;
+  --nav-bg: var(--white);
+  --topbar-bg: var(--blue);
+  --border: #e6eef2;
+  --button-primary-bg: var(--green);
+  --button-primary-text: var(--white);
+  --accent: var(--orange);
+}
+
+/* Animated background for sections */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-creative {
+  background: linear-gradient(120deg, var(--accent-1), var(--accent-2), var(--accent-3));
+  background-size: 300% 300%;
+  animation: gradientShift 12s ease infinite;
+}
+
+/* Subtle floating blobs for hero/header */
+.blob {
+  position: absolute; pointer-events: none; filter: blur(24px); opacity: .22; mix-blend-mode: screen;
+}
+
+.glass-card { background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)); box-shadow: 0 8px 24px rgba(2,6,23,0.08); border-radius:12px; backdrop-filter: blur(6px); }
+
+/* Utility for animated reveal */
+.reveal { transform: translateY(8px); opacity: 0; transition: all 400ms cubic-bezier(.2,.9,.2,1); }
+.reveal.in { transform: translateY(0); opacity: 1; }
+
+/* Utility helpers */
+.bg-accent { background: var(--accent); }
+.text-accent { color: var(--accent); }
+.btn-primary { background: var(--button-primary-bg); color: var(--button-primary-text); }
