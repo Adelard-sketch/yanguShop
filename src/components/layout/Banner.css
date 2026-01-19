@@ -1,0 +1,577 @@
+:root {
+  --primary: #ff6b00;
+  --primary-light: #fff3e8;
+  --secondary: #ffd24d;
+  --border: #e6e6e6;
+  --text-dark: #222;
+  --text-muted: #666;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  padding: 40px 0;
+}
+
+.banner-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+/* =========================
+   CATEGORIES SIDEBAR
+   ========================= */
+.categories-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+
+.categories-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid #f0f0f0;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category-btn {
+  padding: 6px 8px;
+  background: #f8f6f8;
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-btn:hover {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+  transform: translateX(4px);
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 0.9fr;
+  gap: 20px;
+  align-items: start;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .banner-wrapper {
+    gap: 8px;
+  }
+  
+  .categories-sidebar {
+    min-width: 120px;
+    padding: 8px;
+    gap: 4px;
+  }
+  
+  .category-btn {
+    padding: 5px 6px;
+    font-size: 9px;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .categories-sidebar {
+    width: 100%;
+    min-width: auto;
+    padding: 12px;
+    gap: 6px;
+  }
+  
+  .categories-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  
+  .category-btn {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .category-btn {
+    padding: 6px 6px;
+    font-size: 9px;
+  }
+}
+
+/* =========================
+   LEFT PROMO SECTION
+   ========================= */
+.promo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.promo-card {
+  position: relative;
+  background: linear-gradient(135deg, #0b3b88 0%, #1a4d9e 100%);
+  border-radius: 12px;
+  padding: 20px 16px;
+  min-height: 180px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(11, 59, 136, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 50px rgba(11, 59, 136, 0.3);
+}
+
+@media (max-width: 768px) {
+  .promo-card {
+    padding: 20px 16px;
+    min-height: 160px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-card {
+    padding: 16px 12px;
+    min-height: 140px;
+  }
+}
+
+.promo-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.promo-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+}
+
+.promo-sub {
+  font-size: 13px;
+  color: #00bf63;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.promo-title {
+  font-size: 16px;
+  margin: 0 0 6px 0;
+  color: #ff8533;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .promo-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.promo-desc {
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.promo-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.promo-btn:hover {
+  background: #ff8533;
+  transform: scale(1.05);
+}
+
+.promo-visual {
+  position: absolute;
+  right: -15px;
+  bottom: -20px;
+  height: 160px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 15px rgba(0,0,0,0.15));
+  z-index: 1;
+}
+
+/* =========================
+   THUMBNAIL SECTION
+   ========================= */
+.promo-thumbs {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .promo-thumbs {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-thumbs {
+    gap: 8px;
+  }
+}
+
+.thumb {
+  flex: 1;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.thumb:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.thumb img {
+  max-width: 100%;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.thumb:hover img {
+  transform: scale(1.1);
+}
+
+/* =========================
+   TALL IMAGE SECTIONS
+   ========================= */
+.promo-tall {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.promo-tall:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.promo-tall img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.promo-tall:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 1100px) {
+  .banner-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .promo-tall img {
+    height: 240px;
+  }
+
+  .promo-visual {
+    right: -5px;
+    bottom: -10px;
+    height: 100px;
+  }
+
+  .promo-copy {
+    max-width: 65%;
+  }
+
+  .promo-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 16px 0;
+  }
+
+  .promo-card {
+    padding: 12px 12px;
+    min-height: 100px;
+  }
+
+  .promo-visual {
+    display: none;
+  }
+
+  .promo-copy {
+    max-width: 100%;
+  }
+
+  .promo-title {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .promo-desc {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .promo-btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .promo-thumbs {
+    gap: 8px;
+  }
+
+  .thumb {
+    padding: 6px;
+  }
+
+  .thumb img {
+    height: 40px;
+  }
+
+  .promo-tall img {
+    height: 180px;
+  }
+}
+
+/* Mobile (small) tweaks to improve UX: tighter paddings, scrollable thumbs, larger CTA */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .hero-section {
+    padding: 12px 0;
+  }
+
+  .promo-card {
+    padding: 12px;
+    min-height: 100px;
+    border-radius: 10px;
+  }
+
+  .promo-title {
+    font-size: 15px;
+  }
+
+  .promo-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .promo-thumbs {
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  .thumb {
+    flex: 0 0 82px;
+    min-width: 82px;
+    padding: 8px;
+  }
+
+  .thumb img {
+    height: 56px;
+  }
+
+  .promo-tall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 0;
+    overflow: visible; /* allow full image to show on small screens */
+    height: auto;
+  }
+
+  .promo-tall img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh; /* allow tall images to scale within viewport */
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  .promo-copy {
+    max-width: 100%;
+  }
+}
+
+/* Strong mobile stacking: ensure all banner pieces are full-width and images show fully */
+@media (max-width: 600px) {
+  .banner-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .banner-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  .banner-grid > * {
+    width: 100%;
+  }
+
+  .promo-left .promo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    min-height: auto;
+    overflow: visible; /* allow visual to extend beyond card on small screens */
+  }
+
+  .promo-left .promo-copy {
+    order: 1;
+    width: 100%;
+  }
+
+  .promo-left .promo-visual {
+    order: 2;
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 45vh;
+    object-fit: contain;
+    object-position: center;
+    margin-top: 8px;
+    display: block;
+    filter: none;
+  }
+
+  /* Ensure the tall promos also scale within viewport without cropping */
+  .promo-tall img,
+  .promo-left .promo-visual {
+    border-radius: 8px;
+    max-height: 60vh;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Thumbnails: keep horizontal scroll and space */
+  .promo-thumbs {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 6px 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .thumb {
+    flex: 0 0 auto;
+    min-width: 78px;
+  }
+}
