@@ -17,7 +17,6 @@
   },
   "installConfig": {
     "scripts-prepend-node-path": "auto"
-  },
-  "postinstall": "cd backend && npm ci"
+  }
 }
 
