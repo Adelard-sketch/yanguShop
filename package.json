@@ -13,7 +13,7 @@
     "vercel-build": "cd frontend && npm ci && npm run build"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "installConfig": {
     "scripts-prepend-node-path": "auto"
