@@ -1,0 +1,23 @@
+{
+  "name": "yangu-shop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "serverless-http": "^2.8.0"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "node backend/server.js",
+    "build": "cd frontend && npm ci && npm run build",
+    "vercel-build": "cd frontend && npm ci && npm run build"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "installConfig": {
+    "scripts-prepend-node-path": "auto"
+  },
+  "postinstall": "cd backend && npm ci"
+}
+

@@ -1,0 +1,16 @@
+.admin-products-page{max-width:920px;margin:32px auto;padding:20px;background:#fff;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.admin-products-header h1{margin:0 0 6px;font-size:22px}
+.admin-products-header .muted{color:#666;margin-top:4px;font-size:13px}
+.product-form{margin-top:18px;display:flex;flex-direction:column;gap:12px}
+.form-error{background:#fee;border:1px solid #fcc;padding:10px;border-radius:8px;color:#900}
+.form-row{display:flex;flex-direction:column}
+.form-row label{font-weight:600;font-size:13px;margin-bottom:6px}
+.form-row input[type="text"],.form-row input[type="number"],.form-row select,.form-row textarea{padding:10px;border:1px solid #e6e6f0;border-radius:8px;font-size:14px}
+.form-row input[type="file"]{padding:6px}
+.form-actions{margin-top:8px}
+.btn-primary{background:linear-gradient(135deg,#2563eb,#f97316);color:#fff;padding:10px 16px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+.btn-primary:disabled{opacity:0.6;cursor:not-allowed}
+
+@media(max-width:600px){
+  .admin-products-page{margin:12px;padding:14px}
+}
